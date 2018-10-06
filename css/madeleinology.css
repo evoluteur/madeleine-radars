@@ -1,0 +1,71 @@
+
+@font-face{
+  font-family:'Raleway-Regular';
+  src:url('Raleway-Regular.ttf');
+}
+@font-face{
+  font-family:'Raleway-Bold';
+  src:url('Raleway-Bold.ttf');
+}
+
+body {
+  margin: 0;
+  color: black;
+  background-color: white;
+  font-size: 16pt;
+  font-family: 'Raleway-Regular', "Century Gothic", arial;
+  font-weight: 300;
+  /*background-image: url("../pix/bg.gif");*/
+}
+strong{
+  font-family:'Raleway-Bold';
+} 
+section{
+  padding: 10px 60px;
+}
+
+
+a {
+  color: #0099cc;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+h1{
+  margin-bottom: 50px;
+}
+
+
+#radar_charts > div{
+  text-align: center;
+}
+
+.h-radars{
+  width:100%;
+}
+.h-radars > div {
+  margin: 20px;
+  width: 150px;
+  height: 200px;
+  float: left;
+  overflow: scroll;
+}
+
+.radar-chart .area {
+  fill-opacity: 0.7;
+}
+.radar-chart.focus .area {
+  fill-opacity: 0.3;
+}
+.radar-chart.focus .area.focused {
+  fill-opacity: 0.9;
+}
+.area.germany{
+  fill: #FFD700;
+  stroke: none;
+}
+.area.argentina, .argentina .circle {
+  fill: #ADD8E6;
+  stroke: none;
+}
